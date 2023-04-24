@@ -11,9 +11,13 @@ public interface PersonServicePort {
 
     List<PersonInfo> findAll();
 
-    List<PersonInfo> findOnlyMotherFamily();
+    List<PersonInfo> findOnlyMotherFamily(Long personId);
 
-    List<PersonInfo> findOnlyFatherFamily();
+    List<PersonInfo> findOnlyFatherFamily(Long personId);
+
+    List<PersonInfo> findChildren(Long personId);
+
+    List<PersonInfo> findParents(Long personId);
 
     Long update(Long id, PersonInfo newPersonInfo);
 
