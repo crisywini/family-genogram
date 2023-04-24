@@ -1,4 +1,4 @@
-package co.crisi.familygenogram.entity;
+package co.crisi.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

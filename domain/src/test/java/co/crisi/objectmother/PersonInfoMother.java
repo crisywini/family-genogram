@@ -1,6 +1,6 @@
 package co.crisi.objectmother;
 
-import co.crisi.familygenogram.data.PersonInfo;
+import co.crisi.data.PersonInfo;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

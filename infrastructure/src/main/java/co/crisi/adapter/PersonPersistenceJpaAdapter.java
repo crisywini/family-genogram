@@ -1,12 +1,12 @@
-package co.crisi.familygenogram.adapter;
+package co.crisi.adapter;
 
-import co.crisi.familygenogram.data.PersonInfo;
-import co.crisi.familygenogram.entity.Person;
-import co.crisi.familygenogram.exception.NoPeopleFoundToDeleteException;
-import co.crisi.familygenogram.exception.PersonNotFoundException;
-import co.crisi.familygenogram.mapper.PersonMapper;
-import co.crisi.familygenogram.port.spi.PersonPersistencePort;
-import co.crisi.familygenogram.repository.PersonRepository;
+import co.crisi.entity.Person;
+import co.crisi.data.PersonInfo;
+import co.crisi.exception.NoPeopleFoundToDeleteException;
+import co.crisi.exception.PersonNotFoundException;
+import co.crisi.mapper.PersonMapper;
+import co.crisi.port.spi.PersonPersistencePort;
+import co.crisi.repository.PersonRepository;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;

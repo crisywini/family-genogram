@@ -1,4 +1,4 @@
-package co.crisi.familygenogram;
+package co.crisi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

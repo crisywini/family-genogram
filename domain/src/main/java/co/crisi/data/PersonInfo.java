@@ -1,4 +1,4 @@
-package co.crisi.familygenogram.data;
+package co.crisi.data;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -10,7 +10,7 @@ import lombok.Data;
 public class PersonInfo {
 
 
-    private Long id;
+    private Long personalId;
 
     private PersonInfo father;
 

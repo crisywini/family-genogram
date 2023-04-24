@@ -1,6 +1,6 @@
-package co.crisi.familygenogram.repository;
+package co.crisi.repository;
 
-import co.crisi.familygenogram.entity.Person;
+import co.crisi.entity.Person;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;

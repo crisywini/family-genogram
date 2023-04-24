@@ -1,6 +1,6 @@
-package co.crisi.familygenogram.port.spi;
+package co.crisi.port.spi;
 
-import co.crisi.familygenogram.data.PersonInfo;
+import co.crisi.data.PersonInfo;
 import java.util.List;
 
 public interface PersonPersistencePort extends BasePersistencePort<PersonInfo, Long> {

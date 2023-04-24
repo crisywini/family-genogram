@@ -1,4 +1,4 @@
-package co.crisi.familygenogram.exception;
+package co.crisi.exception;
 
 public class ParentNotFoundException  extends RuntimeException {
 

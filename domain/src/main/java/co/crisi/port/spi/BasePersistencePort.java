@@ -1,4 +1,4 @@
-package co.crisi.familygenogram.port.spi;
+package co.crisi.port.spi;
 
 import java.util.List;
 import java.util.Optional;
