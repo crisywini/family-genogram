@@ -1,8 +1,7 @@
-package co.crisi.port.api;
+package co.crisi.familygenogram.port.api;
 
-import co.crisi.data.PersonInfo;
+import co.crisi.familygenogram.data.PersonInfo;
 import java.util.List;
-import java.util.Optional;
 
 public interface PersonServicePort {
 

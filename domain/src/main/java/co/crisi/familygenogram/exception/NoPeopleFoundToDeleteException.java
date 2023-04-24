@@ -1,4 +1,4 @@
-package co.crisi.exception;
+package co.crisi.familygenogram.exception;
 
 public class NoPeopleFoundToDeleteException extends RuntimeException {
 

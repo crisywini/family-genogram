@@ -1,4 +1,4 @@
-package co.crisi.data;
+package co.crisi.familygenogram.data;
 
 import java.time.LocalDate;
 import java.util.Objects;

@@ -1,11 +1,11 @@
-package co.crisi.service;
+package co.crisi.familygenogram.service;
 
-import co.crisi.data.PersonInfo;
-import co.crisi.exception.NoPeopleFoundToDeleteException;
-import co.crisi.exception.ParentNotFoundException;
-import co.crisi.exception.PersonNotFoundException;
-import co.crisi.port.api.PersonServicePort;
-import co.crisi.port.spi.PersonPersistencePort;
+import co.crisi.familygenogram.data.PersonInfo;
+import co.crisi.familygenogram.exception.NoPeopleFoundToDeleteException;
+import co.crisi.familygenogram.exception.ParentNotFoundException;
+import co.crisi.familygenogram.exception.PersonNotFoundException;
+import co.crisi.familygenogram.port.api.PersonServicePort;
+import co.crisi.familygenogram.port.spi.PersonPersistencePort;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
