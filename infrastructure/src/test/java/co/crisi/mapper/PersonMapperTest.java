@@ -45,6 +45,25 @@ class PersonMapperTest {
                     .contains(mother, father);
         }
 
+        @Test
+        @DisplayName("Entity to Info -> should map great grand parents")
+        void whenEntityWithGreatGrandParents_shouldMapThemAll() {
+            val person = PersonMother.randomWithGreatGrandParents();
+            val grandMotherMother = personMapper.mapToInfo(person.getMother().getMother());
+            val grandFatherMother = personMapper.mapToInfo(person.getMother().getFather());
+            val grandMotherFather = personMapper.mapToInfo(person.getFather().getMother());
+            val grandFatherFather = personMapper.mapToInfo(person.getFather().getFather());
+
+            val personInfo = personMapper.mapToInfo(person);
+
+            assertThat(personInfo)
+                    .extracting(pi -> pi.getMother().getMother(),
+                            pi -> pi.getMother().getFather(),
+                            pi -> pi.getFather().getMother(),
+                            pi -> pi.getFather().getFather())
+                    .contains(grandMotherMother, grandFatherMother, grandMotherFather, grandFatherFather);
+        }
+
     }
 
     @Nested

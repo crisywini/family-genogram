@@ -36,4 +36,33 @@ public class PersonMother {
         return father;
     }
 
+    public Person randomWithGreatGrandParents() {
+        var person = randomSavedWithFathers();
+        person.setMother(randomMotherWithParents());
+        person.setFather(randomFatherWithParents());
+        return person;
+    }
+
+    public Person randomMotherWithParents() {
+        var mother = new Person();
+        mother.setId(2L);
+        mother.setPersonalId(5L);
+        mother.setName("Alejandra María");
+        mother.setLastName("Pulgarín");
+        mother.setMother(randomMotherSaved());
+        mother.setFather(randomFatherSaved());
+        return mother;
+    }
+
+    public Person randomFatherWithParents() {
+        var father = new Person();
+        father.setId(3L);
+        father.setPersonalId(4L);
+        father.setMother(randomMotherSaved());
+        father.setFather(randomFatherSaved());
+        father.setName("Jose María");
+        father.setLastName("Rubiano");
+        return father;
+    }
+
 }
