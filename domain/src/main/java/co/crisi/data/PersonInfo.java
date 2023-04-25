@@ -10,7 +10,7 @@ import lombok.Data;
 public class PersonInfo {
 
 
-    private Long id;
+    private Long personalId;
 
     private PersonInfo father;
 

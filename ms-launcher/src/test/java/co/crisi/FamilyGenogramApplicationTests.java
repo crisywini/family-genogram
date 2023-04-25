@@ -1,4 +1,4 @@
-package co.crisi.familygenogram;
+package co.crisi;
 
 
 

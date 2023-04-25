@@ -2,7 +2,6 @@ package co.crisi.port.api;
 
 import co.crisi.data.PersonInfo;
 import java.util.List;
-import java.util.Optional;
 
 public interface PersonServicePort {
 

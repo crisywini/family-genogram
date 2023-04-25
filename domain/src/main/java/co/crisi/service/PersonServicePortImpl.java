@@ -1,9 +1,9 @@
 package co.crisi.service;
 
-import co.crisi.data.PersonInfo;
 import co.crisi.exception.NoPeopleFoundToDeleteException;
-import co.crisi.exception.ParentNotFoundException;
 import co.crisi.exception.PersonNotFoundException;
+import co.crisi.data.PersonInfo;
+import co.crisi.exception.ParentNotFoundException;
 import co.crisi.port.api.PersonServicePort;
 import co.crisi.port.spi.PersonPersistencePort;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class PersonServicePortImpl implements PersonServicePort {
     @Override
     public Long save(PersonInfo personInfo) {
         return personPersistencePort.save(personInfo)
-                .getId();
+                .getPersonalId();
     }
 
     @Override
@@ -74,7 +74,7 @@ public class PersonServicePortImpl implements PersonServicePort {
 
     @Override
     public Long update(Long id, PersonInfo newPersonInfo) {
-        return personPersistencePort.update(id, newPersonInfo).getId();
+        return personPersistencePort.update(id, newPersonInfo).getPersonalId();
     }
 
     @Override
