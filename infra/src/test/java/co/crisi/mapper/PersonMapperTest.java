@@ -1,6 +1,7 @@
 package co.crisi.mapper;
 
 import co.crisi.data.PersonInfo;
+import co.crisi.mapper.PersonMapper;
 import co.crisi.objectmother.PersonMother;
 import lombok.val;
 import org.junit.jupiter.api.DisplayName;

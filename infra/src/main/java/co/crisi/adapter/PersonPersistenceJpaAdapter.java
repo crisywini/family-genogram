@@ -1,7 +1,7 @@
 package co.crisi.adapter;
 
-import co.crisi.entity.Person;
 import co.crisi.data.PersonInfo;
+import co.crisi.entity.Person;
 import co.crisi.exception.NoPeopleFoundToDeleteException;
 import co.crisi.exception.PersonNotFoundException;
 import co.crisi.mapper.PersonMapper;

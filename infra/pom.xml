@@ -9,12 +9,13 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>infrastructure</artifactId>
+  <artifactId>infra</artifactId>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
+
 
   <dependencies>
     <dependency>
@@ -86,5 +87,6 @@
       </plugin>
     </plugins>
   </build>
+
 
 </project>
