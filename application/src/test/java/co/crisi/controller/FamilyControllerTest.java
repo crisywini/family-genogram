@@ -52,7 +52,19 @@ class FamilyControllerTest {
         val response = result.getResponse().getContentAsString();
         val personResponse = JsonMapperUtils.asObject(response, PersonInfo.class);
         assertThat(personResponse)
-                .isNotNull();
+                .isNotNull()
+                .extracting(PersonInfo::getPersonalId,
+                        PersonInfo::getName,
+                        PersonInfo::getLastName,
+                        PersonInfo::getBirthDate,
+                        PersonInfo::getMother,
+                        PersonInfo::getFather)
+                .contains(person.getPersonalId(),
+                        person.getName(),
+                        person.getLastName(),
+                        person.getBirthDate(),
+                        person.getMother(),
+                        person.getFather());
     }
 
 }
