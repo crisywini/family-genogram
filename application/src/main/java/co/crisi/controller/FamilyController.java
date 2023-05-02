@@ -3,6 +3,7 @@ package co.crisi.controller;
 import co.crisi.data.PersonInfo;
 import co.crisi.port.api.PersonServicePort;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/people/family")
 @RestController
+@AllArgsConstructor
 public class FamilyController {
 
     @Autowired

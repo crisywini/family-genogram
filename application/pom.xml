@@ -22,6 +22,16 @@
       <version>${project.version}</version>
     </dependency>
 
+    <!--Object Mothers -->
+    <dependency>
+      <groupId>co.crisi</groupId>
+      <artifactId>domain</artifactId>
+      <version>${project.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
