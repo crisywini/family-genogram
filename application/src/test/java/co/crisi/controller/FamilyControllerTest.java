@@ -34,7 +34,7 @@ class FamilyControllerTest {
         MockitoAnnotations.openMocks(this);
         mockMvc = MockMvcBuilders
                 .standaloneSetup(new FamilyController(personServicePort))
-                .setViewResolvers((ViewResolver) (viewName, locale) -> new MappingJackson2JsonView())
+                .setViewResolvers((viewName, locale) -> new MappingJackson2JsonView())
                 .build();
     }
 
