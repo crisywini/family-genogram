@@ -1,12 +1,18 @@
 package co.crisi.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDate;
 import java.util.Objects;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class PersonInfo {
 
 
@@ -21,6 +27,7 @@ public class PersonInfo {
     private String lastName;
 
     private LocalDate birthDate;
+
 
 
     public String getLastNameFromParents() {
